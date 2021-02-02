@@ -1,21 +1,14 @@
 <template>
-  <Nav></Nav>
-  <router-view />
+  <Layout>
+    <router-view />
+  </Layout>
 </template>
 
 <script>
-  import Nav from '@/components/Nav.vue'
+  import Layout from '@/components/Layout.vue'
   export default {
     components: {
-      Nav
+      Layout
     }
   }
 </script>
-
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-</style>
