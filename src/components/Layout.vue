@@ -4,10 +4,10 @@
 
   <section>
     <aside>
-      <div class="aside-menu">
+      <div :class="asideMenu()">
         <img class="aside-icon" src="https://office.mustplay.in.th/static/thumb/2020/10/25/attach-1606277639569.jpg"
           alt="">
-        <span>Home</span>
+        <a href="/">Home</a>
       </div>
       <div class="aside-menu">
         <img class="aside-icon" src="https://office.mustplay.in.th/static/thumb/2020/10/25/attach-1606277639569.jpg"
@@ -33,50 +33,11 @@
   export default {
     components: {
       Nav
-    }
+    },
+    methods: {
+      asideMenu() {
+        return this.$route.name === 'Home' ? 'aside-menu-active' : 'aside-menu'
+      }
+    },
   }
 </script>
-
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  section {
-    display: flex;
-  }
-
-  aside {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 12px 0px;
-    width: 260px;
-  }
-
-  .aside-menu {
-    height: 40px;
-    padding: 0px 24px;
-    display: flex;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-  }
-
-  .aside-menu:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .aside-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    margin-right: 24px;
-  }
-
-  @media (max-width: 768px) {
-    aside {
-      display: none;
-    }
-  }
-</style>

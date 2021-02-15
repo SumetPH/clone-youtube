@@ -1,0 +1,32 @@
+article {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding: 1rem 5rem;
+  min-height: 100vh;
+}
+
+article a {
+  text-decoration: none;
+  color: white;
+}
+
+.articla-col {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .articla-col {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .articla-col {
+    width: 25%;
+  }
+}

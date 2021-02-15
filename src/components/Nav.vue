@@ -8,7 +8,10 @@
           <div></div>
         </div>
         <div class="nav-title">
-          <span>YouTube</span>
+          <a style="display: flex; align-items: center; gap: 0.4rem" href="/">
+            <img style="width: 24px;" src="@/assets/youtube.png" alt="">
+            <b>YouTube</b>
+          </a>
         </div>
       </div>
 

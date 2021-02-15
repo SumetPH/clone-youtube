@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+}
+
+aside {
+  background-color: $bg-dark;
+  padding: 12px 0px;
+  width: 260px;
+}
+
+.aside-menu {
+  height: 40px;
+  padding: 0px 24px;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &-active {
+    @extend .aside-menu;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.aside-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+@media (max-width: 766px) {
+  aside {
+    display: none;
+  }
+}
