@@ -2,7 +2,7 @@
   <div class="video" style="width: 100%; display: flex;">
     <div style="width: 70%;">
       <div class="video-player">
-        <iframe class="player" type="text/html" :src="`http://www.youtube.com/embed/${$route.params.id}`"
+        <iframe class="player" type="text/html" :src="`https://www.youtube.com/embed/${$route.params.id}`"
           frameborder="0"></iframe>
       </div>
       <div>
